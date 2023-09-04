@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import pytz
 from option import options
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -63,7 +62,6 @@ if __name__ == '__main__':
 		# name是课程名称
 		# time是时间
 		# loc是地点
-		# print(name, time_start, time_end, loc)
 
 	str += "END:VCALENDAR"
 
