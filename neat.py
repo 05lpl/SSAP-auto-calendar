@@ -4,11 +4,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 def init():
-	delta = []
+	delta = [0,0]
 	for i in range(5):
 		for j in range(11):
 			delta.append(i+1)
-	print(len(delta))
 	return delta
 
 def get_time(time, delta):
@@ -26,8 +25,14 @@ def get_str(name, loc, start_time, end_time, delta):
 	str += f"SUMMARY:{name}\n"
 	str += f"LOCATION:{loc}\n"
 	str += 'END:VEVENT\n'
-	print(str)
+	# print(str)
 	return str
+
+def check(name):
+	for str in opt.exclude:
+		if name.count(str) > 0:
+			return True
+	return False
 
 if __name__ == '__main__':
 
@@ -55,6 +60,8 @@ if __name__ == '__main__':
 		i = 2 * k
 		j = 2 * k + 1
 		name = classes[i][:-11]
+		if(check(name)):
+			continue;
 		time = classes[i][-11:]
 		time_start, time_end = time.split('-')
 		loc = classes[j]
