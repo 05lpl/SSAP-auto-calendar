@@ -1,10 +1,6 @@
 # SSAP-auto-calendar
-1.打开课表文件
-2.将有与正课冲突的自习课删除
-3.将EAP/FAP工作表移动至最左边
-4.另存为xls格式
-5.打开all.py
-6.修改年级
-7.修改日期
-8.填入自己的课程
-9.run
+1.打开schoolpal的我的日程
+2.下载HTML文件
+3.修改“我的日程.html”至"data.txt"
+4.把“data.txt”移动至SSAP-auto-calendar-main文件夹
+5.
