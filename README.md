@@ -5,7 +5,9 @@ for mac
 
 1.打开schoolpal的我的日程
 
-2.下载HTML文件
+2.下载HTML文件 *注意选择 网页，全部*
+<img width="487" alt="image" src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/d8ed95d6-2a89-48e4-b114-b6b37198848e">
+
 
 3.修改“我的日程.html”至"data.txt"
 
