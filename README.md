@@ -25,6 +25,7 @@ python3 neat.py --day 3（日期） --month 12（月份） -year 2023
 资助我们
 
 ![image](https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/9fa9f057-416e-48a7-b1f9-dced29d5f95f)
-![image](https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/9fa9f057-416e-48a7-b1f9-dced29d5f95f)
+![image](https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/e4388870-e2e7-4902-b724-85b1e8f91766)
+
 
   
