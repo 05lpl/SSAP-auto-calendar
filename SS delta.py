@@ -65,7 +65,7 @@ if __name__ == '__main__':
 		# loc是地点
 		# print(name, time_start, time_end, loc)
 
-	str += "END:VEVENT"
+	str += "END:VCALENDAR"
 
 	with open(opt.save_path, "a") as f:
 		f.write(str)
