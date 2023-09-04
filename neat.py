@@ -29,7 +29,7 @@ def get_str(name, loc, start_time, end_time, delta):
 	return str
 
 def check(name):
-	for str in opt.exclude:
+	for str in opt.exclude_class:
 		if name.count(str) > 0:
 			return True
 	return False
