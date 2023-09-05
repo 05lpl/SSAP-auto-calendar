@@ -15,25 +15,24 @@
 
 # Mac教程
 
+python推荐安装最新版 安装教程如下：
+https://zhuanlan.zhihu.com/p/335220647
+按照下面步骤一步步来，不可能安不上。
+
 1.打开schoolpal的我的日程
 
-2.使用Chrome/Edge下载HTML文件 *注意选择 网页，全部*
-
-<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/d8ed95d6-2a89-48e4-b114-b6b37198848e" width="487" alt="image" >
-
-
+2.使用Chrome/Edge下载HTML文件 注意选择 网页，全部
 
 3.把“我的日程.html”移动至SSAP-auto-calendar-main文件夹
 
 4.右键SSAP-auto-calendar-main文件夹 点击新建文件夹位置的终端窗口
 
-<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/f9e439f2-af54-46aa-ae8a-06db61d090d0" alt="Pulpit rock" width="304" height="228">
+5.第一次使用时请输入一下两条命令：
 
-5.修改并输入启动命令
-python3 auto_calender.py
+pip
+6.输入启动命令 python3 auto_calendar.py
 
-6.把export.ics拖动至日历
-
+7.把export.ics拖动至日历
 
 
 
