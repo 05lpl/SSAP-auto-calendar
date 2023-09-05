@@ -64,7 +64,10 @@ if __name__ == '__main__':
 	classes = []
 	for k in divs:
 		if k.string is not None:
+			if k.string == "确定":
+				continue
 			classes.append(k.string)
+			# print(k.string)
 
 	#此时classes已经存储了所有的信息，每两个为一组
 
