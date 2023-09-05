@@ -1,8 +1,8 @@
 # SSAP-auto-calendar
 # 需要安装python和pip
-安装教程如下：
-https://zhuanlan.zhihu.com/p/335220647
-按照下面步骤一步步来，不可能安不上。
+安装教程如下：  
+https://zhuanlan.zhihu.com/p/335220647   
+按照下面步骤一步步来，不可能安不上。  
 
 1.打开schoolpal的我的日程
 
