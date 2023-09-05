@@ -12,6 +12,8 @@
 感兴趣吗？那就不要犹豫了！快来加我们的微信购买吧（whiqnxhiwnchwijx/TangzijiaThomas）
 
 别错过这个提升生产力的绝佳机会，赶紧加入我们的会员服务吧！
+# 视频教程
+https://www.bilibili.com/video/BV14j41117TA/?spm_id_from=333.999.0.0
 
 # Mac教程
 
