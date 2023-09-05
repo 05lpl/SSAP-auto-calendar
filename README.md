@@ -22,21 +22,17 @@
 <img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/d8ed95d6-2a89-48e4-b114-b6b37198848e" width="487" alt="image" >
 
 
-3.修改“我的日程.html”至"data.txt"
 
-4.把“data.txt”移动至SSAP-auto-calendar-main文件夹
+3.把“我的日程.html”移动至SSAP-auto-calendar-main文件夹
 
-5.右键SSAP-auto-calendar-main文件夹 点击
+4.右键SSAP-auto-calendar-main文件夹 点击新建文件夹位置的终端窗口
 
 <img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/f9e439f2-af54-46aa-ae8a-06db61d090d0" alt="Pulpit rock" width="304" height="228">
 
-6.修改并输入启动命令
-python3 neat.py --day 3 --month 12 -year 1999
-例如
-python3 neat.py --day 3（周日日期） --month 9（月份） -year 2023
+5.修改并输入启动命令
+python3 auto_calender.py
 
-
-7.把export.ics拖动至日历
+6.把export.ics拖动至日历
 
 
 
