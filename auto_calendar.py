@@ -5,13 +5,6 @@ from option import options
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-def init():
-	delta = [0,0]
-	for i in range(5):
-		for j in range(11):
-			delta.append(i+1)
-	return delta
-
 def get_time(time, delta):
 	time = f"{opt.year}-{opt.month}-{opt.day} {time}:00"
 	input_time = datetime.strptime(time, "%Y-%m-%d %H:%M:%S")
@@ -37,14 +30,19 @@ def check(name):
 			return True
 	return False
 
+def check_next(k):
+	change_spot = {'class': ['fc-highlight-container']}
+	if k.attrs == change_spot:
+		return True
+	return False
+
 if __name__ == '__main__':
 
-	deltas = init()
 	opt = options().get_opt()
 	print(opt)
 
 	if opt.first is True:
-		os.system("pip3 install bs4")
+		os.system("pip3 install beautifulsoup4")
 		os.system("pip3 install lxml")
 
 	with open(opt.read_path,"r") as f:
@@ -54,6 +52,9 @@ if __name__ == '__main__':
 	divs = soup.find_all('div')
 	h2 = soup.find_all('h2')
 	# get all the data we need
+
+	with open("debug.txt","w") as f:
+		f.write(soup.prettify())
 
 	for k in h2:
 		if k.string is not None:
@@ -66,12 +67,19 @@ if __name__ == '__main__':
 			break
 
 	classes = []
-	for k in divs:
+	flag = False #看课表是否出现
+	pointer = 0  #星期几
+	deltas = []  #星期几
+	for i in range(len(divs)):
+		k = divs[i]
 		if k.string is not None:
 			if k.string == "确定":
 				continue
 			classes.append(k.string)
-			# print(k.string)
+			deltas.append(pointer)
+			flag = True
+		if flag and i+2<len(divs) and check_next(divs[i+2]):
+			pointer += 1
 
 	#此时classes已经存储了所有的信息，每两个为一组
 
@@ -86,7 +94,7 @@ if __name__ == '__main__':
 		time = classes[i][-11:]
 		time_start, time_end = time.split('-')
 		loc = classes[j]
-		str += get_str(name, loc, time_start, time_end, deltas[k])
+		str += get_str(name, loc, time_start, time_end, deltas[k*2])
 		# name是课程名称
 		# time是时间
 		# loc是地点
