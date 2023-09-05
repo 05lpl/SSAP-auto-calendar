@@ -27,9 +27,8 @@ https://zhuanlan.zhihu.com/p/335220647
 
 4.右键SSAP-auto-calendar-main文件夹 点击新建文件夹位置的终端窗口
 
-5.第一次使用时请输入一下两条命令：
+5.第一次使用时请输入一下两条命令：pip
 
-pip
 6.输入启动命令 python3 auto_calendar.py
 
 7.把export.ics拖动至日历
