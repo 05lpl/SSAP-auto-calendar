@@ -16,6 +16,7 @@ class options():
         parser.add_argument("--read_path", type=str, default="我的日程.html", help="The read path.")
         parser.add_argument("--head_path", type=str, default="header.txt", help="The first few lines of the document.")
         parser.add_argument("--exclude", action="store_true", default=False, help="Whether to exclude some class or not.")
+        parser.add_argument("--first", action="store_true", default=False, help="Whether using the code for the first time.")
         parser.add_argument("--exclude_class", nargs='+', default=["自习","升旗"])
         self.opt = parser.parse_args()
         self.init()

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import re
 from option import options
 from bs4 import BeautifulSoup
@@ -26,7 +27,6 @@ def get_str(name, loc, start_time, end_time, delta):
 	str += f"SUMMARY:{name}\n"
 	str += f"LOCATION:{loc}\n"
 	str += 'END:VEVENT\n'
-	# print(str)
 	return str
 
 def check(name):
@@ -42,6 +42,10 @@ if __name__ == '__main__':
 	deltas = init()
 	opt = options().get_opt()
 	print(opt)
+
+	if opt.first is True:
+		os.system("pip3 install bs4")
+		os.system("pip3 install lxml")
 
 	with open(opt.read_path,"r") as f:
 		data=f.read()
