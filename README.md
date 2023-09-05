@@ -44,8 +44,13 @@ SSAP-auto-calendar 2.0
 针对School pal系统进行了底层重写，以txt为导入文件
 ## Sep 5, 2023
 SSAP-auto-calendar 2.1
-以html为导入文件，方便更多人使用
+以html为导入文件，方便0基础用户使用
 
+SSAP-auto-calendar 2.2
+更新了启动命令
+## Sep 6, 2023
+SSAP-auto-calendar 3.1
+正式支持Windows端
 
 ## 资助我们
 
