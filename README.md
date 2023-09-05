@@ -17,7 +17,7 @@
 
 1.打开schoolpal的我的日程
 
-2.下载HTML文件 *注意选择 网页，全部*
+2.使用Chrome/Edge下载HTML文件 *注意选择 网页，全部*
 
 <img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/d8ed95d6-2a89-48e4-b114-b6b37198848e" width="487" alt="image" >
 
