@@ -1,9 +1,11 @@
 # SSAP-auto-calendar
-# 需要安装python 3.7及以上版本 和pip
+# 需要安装 python 3.4及以上版本 和 pip
+
 python推荐安装最新版
 安装教程如下：  
-https://zhuanlan.zhihu.com/p/335220647   
-按照下面步骤一步步来，不可能安不上。  
+https://zhuanlan.zhihu.com/p/335220647
+按照上面步骤一步步来，不可能安不上。     
+python 3.4 及以上版本都预装了 pip   
 
 1.打开schoolpal的我的日程
 
@@ -13,11 +15,7 @@ https://zhuanlan.zhihu.com/p/335220647
 
 4.右键SSAP-auto-calendar-main文件夹 点击新建文件夹位置的终端窗口
 
-5.第一次使用时请输入一下两条命令：
-```
-pip
-```
-
-6.输入启动命令 python3 auto_calendar.py
+6.输入启动命令 python3 auto_calendar.py        
+注意：当第一次启动该程序的时候需要输入：python3 auto_calendar.py --first
 
 7.把export.ics拖动至日历
