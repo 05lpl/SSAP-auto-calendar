@@ -1,17 +1,18 @@
-#!/usr/bin/env python3
 import os
 import re
 from option import options
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-def get_time(time, delta):
-	time = f"{opt.year}-{opt.month}-{opt.day} {time}:00"
-	input_time = datetime.strptime(time, "%Y-%m-%d %H:%M:%S")
-	delta = timedelta(days = delta)
-	input_time += delta
+def add_time(time, delta):
+	delta = timedelta(days=delta)
+	input_time = time + delta
 	ics_formatted_time = input_time.strftime("%Y%m%dT%H%M%S")
 	return ics_formatted_time
+
+def get_time(time, delta):
+	time = f"{opt.year}-{opt.month}-{opt.day} {time}:00"
+	return add_time(datetime.strptime(time, "%Y-%m-%d %H:%M:%S"), delta)
 
 def get_str(name, loc, start_time, end_time, delta):
 	str = 'BEGIN:VEVENT\n'
@@ -19,6 +20,15 @@ def get_str(name, loc, start_time, end_time, delta):
 	str += f"DTEND;TZID=Asia/Shanghai:{get_time(end_time, delta)}\n"
 	str += f"SUMMARY:{name}\n"
 	str += f"LOCATION:{loc}\n"
+	str += f"RRULE:FREQ=WEEKLY;UNTIL={get_time(start_time, opt.repeat_weeks * 7)}\n"
+	if opt.alarms is True:
+		str += f"BEGIN:VALARM\n"
+		str += f"TRIGGER:-PT{opt.alarm_set_time}M\n"
+		if opt.alarm_mode == "audio" or opt.alarm_mode == 'all':
+			str += f"ACTION:AUDIO\n"
+		if opt.alarm_mode == "display" or opt.alarm_mode == 'all':
+			str += f"ACTION:DISPLAY\n"
+		str += f"END:VALARM\n"
 	str += 'END:VEVENT\n'
 	return str
 
@@ -40,10 +50,6 @@ if __name__ == '__main__':
 
 	opt = options().get_opt()
 	print(opt)
-
-	if opt.first is True:
-		os.system("pip3 install beautifulsoup4")
-		os.system("pip3 install lxml")
 
 	with open(opt.read_path,"r") as f:
 		data=f.read()
@@ -99,7 +105,8 @@ if __name__ == '__main__':
 		# time是时间
 		# loc是地点
 
-	str += "END:VCALENDAR"
+	str += "END:VCALENDAR\n"
 
 	with open(opt.save_path, "a") as f:
 		f.write(str)
+

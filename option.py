@@ -18,6 +18,10 @@ class options():
         parser.add_argument("--exclude", action="store_true", default=False, help="Whether to exclude some class or not.")
         parser.add_argument("--first", action="store_true", default=False, help="Whether using the code for the first time.")
         parser.add_argument("--exclude_class", nargs='+', default=["自习","升旗"])
+        parser.add_argument("--repeat_weeks", type=int, default=20, help="repeat how many weeks.")
+        parser.add_argument("--alarms", action="store_true", default=False, help="Whether to use the alarm or not.")
+        parser.add_argument("--alarm_set_time", type=int, default=5, help="When does the alarm start.")
+        parser.add_argument("--alarm_mode", type=str, default="display", help="The mode of the alarm.")
         self.opt = parser.parse_args()
         self.init()
         return self.opt
