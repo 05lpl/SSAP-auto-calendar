@@ -20,7 +20,8 @@ def get_str(name, loc, start_time, end_time, delta):
 	str += f"DTEND;TZID=Asia/Shanghai:{get_time(end_time, delta)}\n"
 	str += f"SUMMARY:{name}\n"
 	str += f"LOCATION:{loc}\n"
-	str += f"RRULE:FREQ=WEEKLY;UNTIL={get_time(start_time, opt.repeat_weeks * 7)}\n"
+	if opt.repeat is True:
+		str += f"RRULE:FREQ=WEEKLY;UNTIL={get_time(start_time, opt.repeat_weeks * 7)}\n"
 	if opt.alarms is True:
 		str += f"BEGIN:VALARM\n"
 		str += f"TRIGGER:-PT{opt.alarm_set_time}M\n"
