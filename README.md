@@ -1,21 +1,3 @@
-
-
-
-# SSAP-auto-calendar 会员
- 
-0.99$ USD一个月
-
-🌟会员专享功能🌟：
-1. 发送html文件至客服即可获取日历文件
-2. 提前接收版本更新和新功能试用。
-3. 专属客户支持，随时解决您的问题。
-
-如此高效的工具，价格却非常亲民。只需0.99刀一个月，您就能享受到这一系列高级功能，真正做到轻松管理课表，提升生活和工作质量。
-
-感兴趣吗？那就不要犹豫了！快来加我们的微信购买吧（whiqnxhiwnchwijx/TangzijiaThomas）
-
-别错过这个提升生产力的绝佳机会，赶紧加入我们的会员服务吧！
-![image](https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/93bb796e-aab3-4076-b631-cde61a854ee3)
 # 视频教程
 https://www.bilibili.com/video/BV14j41117TA/?spm_id_from=333.999.0.0
 
