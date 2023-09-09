@@ -45,9 +45,9 @@ SSAP-auto-calendar 3.1
 SSAP-auto-calendar 3.1
 正式支持Windows端
 
-修复了无法增加参数的bug
-添加了重复功能，现在可以每周重复了
-添加了闹铃功能(beta)
+修复了无法增加参数的bug           
+添加了重复功能，现在可以每周重复了           
+添加了闹铃功能(beta)           
 
 ## 资助我们
 
