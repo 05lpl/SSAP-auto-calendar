@@ -1,5 +1,6 @@
 # 用户群
-<img src="(https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/ab556e14-f623-4b76-9c74-2d6739824be6" alt="Pulpit rock" width="304" height="228">
+<img src="(https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/ab556e14-f623-4b76-9c74-2d6739824be6" alt="Pulpit rock" width="304" height="228">![191694310834_ pic](https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/be7b61d0-9efa-4ab9-8f17-e66f8c41763a)
+
 
 # 视频教程（V3.1）
 https://www.bilibili.com/video/BV14j41117TA/?spm_id_from=333.999.0.0
