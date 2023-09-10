@@ -88,7 +88,7 @@ SSAP-auto-calendar 3.1
 
 ## Sep 8, 2023
 
-SSAP-auto-calendar 3.1
+SSAP-auto-calendar 3.2
 正式支持Windows端
 
 修复了无法增加参数的bug           
