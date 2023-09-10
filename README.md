@@ -97,8 +97,8 @@ SSAP-auto-calendar 3.2
 
 ## 资助我们
 
-<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/9fa9f057-416e-48a7-b1f9-dced29d5f95f" alt="Pulpit rock" width="304" height="228">
-<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/e4388870-e2e7-4902-b724-85b1e8f91766" alt="Pulpit rock" width="304" height="228">
+<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/9fa9f057-416e-48a7-b1f9-dced29d5f95f" alt="Pulpit rock" width="300" height="400">
+<img src="https://github.com/05lpl/SSAP-auto-calendar/assets/91683680/e4388870-e2e7-4902-b724-85b1e8f91766" alt="Pulpit rock" width="300" height="400">
 
 
 
