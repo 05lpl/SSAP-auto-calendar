@@ -1,4 +1,4 @@
-# 视频教程（旧版本）
+# 视频教程（V3.1）
 https://www.bilibili.com/video/BV14j41117TA/?spm_id_from=333.999.0.0
 # SSAP-auto-calendar
 需要安装 python 3.4 及以上版本 和 pip
