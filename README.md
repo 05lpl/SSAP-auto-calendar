@@ -1,4 +1,4 @@
-# 视频教程
+# 视频教程（旧版本）
 https://www.bilibili.com/video/BV14j41117TA/?spm_id_from=333.999.0.0
 # SSAP-auto-calendar
 需要安装 python 3.4 及以上版本 和 pip
@@ -6,7 +6,7 @@ python推荐安装最新版安装教程
 按照上面步骤一步步来，不可能安不上。 实在不行就打劫身边一个会python的同学帮你装
 python 3.4 及以上版本都预装了 pip
 
-# SSAP-autp-calendar for mac 教程（旧版本）：
+# SSAP-autp-calendar for mac 教程：
 1.打开schoolpal的我的日程
 
 2.使用Chrome/Edge下载HTML文件 注意选择 网页，全部 （此时会下载一个 我的日程.html 文件和一个文件夹）
