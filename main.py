@@ -18,8 +18,14 @@ def get_str(name, loc, start_time, end_time, delta):
 	str = 'BEGIN:VEVENT\n'
 	str += f"DTSTART;TZID=Asia/Shanghai:{get_time(start_time, delta)}\n"
 	str += f"DTEND;TZID=Asia/Shanghai:{get_time(end_time, delta)}\n"
-	str += f"SUMMARY:{name}\n"
-	str += f"LOCATION:{loc}\n"
+	if opt.watch_mode is True:	
+		str += f"SUMMARY:{name}{loc}\n"
+	elif opt.precise_location is True:
+		str += f"SUMMARY:{name}\n"
+		str += f"LOCATION:广东省广州市龙溪大道省实路1号 {loc}\n"
+	else:
+		str += f"SUMMARY:{name}\n"
+		str += f"LOCATION:{loc}\n"
 	if opt.repeat is True:
 		str += f"RRULE:FREQ=WEEKLY;UNTIL={get_time(start_time, opt.repeat_weeks * 7)}\n"
 	if opt.alarms is True:
@@ -80,12 +86,13 @@ if __name__ == '__main__':
 	for i in range(len(divs)):
 		k = divs[i]
 		if k.string is not None:
+			flag = True
 			if k.string == "确定":
 				continue
 			classes.append(k.string)
 			deltas.append(pointer)
-			flag = True
-		if flag and i+2<len(divs) and check_next(divs[i+2]):
+			
+		if flag and i+2 < len(divs) and check_next(divs[i+2]):
 			pointer += 1
 
 	#此时classes已经存储了所有的信息，每两个为一组
